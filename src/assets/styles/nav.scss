@@ -1,0 +1,22 @@
+@import "../styles/_variables.scss";
+
+nav {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+
+  a {
+    transition: $fade_hover_default;
+
+    &.games {
+      padding-left: 20px;
+      font-size: 4rem;
+
+      &:hover {
+        font-size: 4.5rem;
+        text-shadow: 0 0 10px $white;
+      }
+    }
+  }
+}

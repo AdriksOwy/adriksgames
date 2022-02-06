@@ -1,0 +1,46 @@
+{
+  "games": [
+    {
+      "id": "star-wars-first",
+      "name": "STAR WARS EPISODE I",
+      "description": "The game was created in 2018. The game is in no way connected with the main story of STAR WARS! The whole story of the game was made by me! A 2D game in which the idea is to pass levels and fight the dark side of the force. I decided to make a game like this because I love STAR WARS movies. The game doesn't have a save function! Greetings to my beloved Testers NederQ, IgiPop75 and Jigsaw! Have a nice game!",
+      "img": "/images/games/star-wars-part-one.webp",
+      "href": "https://drive.google.com/file/d/1gmCcn9OCs5qtqCVvVaOQk87VgZ6VnU0z/view?usp=sharing"
+    },
+    {
+      "id": "star-wars-second",
+      "name": "STAR WARS EPISODE II",
+      "description": "Another installment in the STAR WARS 2D series created in 2020. The production of the game took two months. Similar game mechanics as in the first part, but Episode II has more functions and options. Game has it's own automatic save! Greetings to my beloved NederQ Testers, IgiPop75 and Jigsaw! Have a nice game!",
+      "img": "/images/games/star-wars-part-two.webp",
+      "href": "https://drive.google.com/file/d/11S3eALVudJdLKYuqK1beqUTyEVcm3a9r/view?usp=sharing"
+    },
+    {
+      "id": "troll-first",
+      "name": "TROLL",
+      "description": "One of my first completed projects in 2017. Unfortunately, the game has a few bugs that I can't fix because I lost the whole project with this game... A 2D platform game in which the task is to use a Troll (character) to reach a magical door and avoid obstacles. To win the game you have to complete all the levels and defeat the Boss! Have a nice game!",
+      "img": "/images/games/troll-one.webp",
+      "href": "https://drive.google.com/file/d/1U2WANAbjmwt6RSuaeatkqlQSx4KNj8lk/view?usp=sharing"
+    },
+    {
+      "id": "troll-second",
+      "name": "TROLL 2",
+      "description": "The second part of the TROLL series game created in 2019. Same task as in the first part of the game, but in the second part of the game more sounds have been added and many bugs have been fixed! The graphics of the game have also been significantly improved. Have a nice game!",
+      "img": "/images/games/troll-two.webp",
+      "href": "https://drive.google.com/file/d/1FGklKL4XMF-FkCZFxNQDZde6yJ_k9uUr/view?usp=sharing"
+    },
+    {
+      "id": "six-nights-at-the-warehouse",
+      "name": "SIX NIGHTS AT THE WAREHOUSE",
+      "description": "One of the best games I have ever created. FNAF fan game with reworked textures and it's own vivid story! The game has many secrets explaining the plot. Project created in over a month during the 2019 school year. I think many FNAFFFFF maniacs will like the game! Have a nice game!",
+      "img": "/images/games/six-nights-at-the-warehouse.webp",
+      "href": "https://drive.google.com/file/d/1kq-Clf6ehFxn-LzqI2kOpniT3iC_3bp6/view?usp=sharing"
+    },
+    {
+      "id": "flappy-bird",
+      "name": "FLAPPY BIRD",
+      "description": "The game was created in exactly 3 days in 2019 before the holidays. I don't think I need to explain what this game is about. Buy new skins in the shop for coins! Have a nice game!",
+      "img": "/images/games/flappy-bird.webp",
+      "href": "https://drive.google.com/file/d/1gL0oPBxp85Ym6G41JiEv88vJ3am60vWz/view?usp=sharing"
+    }
+  ]
+}

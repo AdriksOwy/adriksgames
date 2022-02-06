@@ -1,0 +1,58 @@
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-3000px);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    opacity: .5;
+    transform: scale(1.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: .5;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -50%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

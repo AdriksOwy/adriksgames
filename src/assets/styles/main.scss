@@ -1,0 +1,282 @@
+@import "../styles/_variables.scss";
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  .logo {
+    width: 300px;
+    height: 300px;
+    background-image: url(/images/logo.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: ripple 5s infinite ease;
+  }
+
+  .games, .game-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeUp 1.5s;
+  }
+
+  .games {
+    max-width: 1540px;
+    margin-bottom: 2rem;
+
+    .header-games {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+
+      a {
+        transition: $fade_hover_default;
+
+        &:hover {
+          text-shadow: 0 0 20px $white;
+        }
+
+        i {
+          font-size: 4rem;
+          color: $white;
+        }
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 5rem;
+      }
+    }
+    
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+  
+      .game-item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        
+        &-container {
+          height: 250px;
+          margin: .8rem;
+          border-radius: 20px;
+          box-shadow: 0 0 8px $white;
+          transition: $fade_hover_default;
+          background-color: $white;
+
+          a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+          }
+  
+          img {
+            max-width: 135px;
+            height: 135px;
+          }
+    
+          h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            transition: $fade_hover_default;
+            color: $black;
+          }
+  
+          &:hover {
+            box-shadow: 0 0 15px $white;
+
+            h1 {
+              color: $discord;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .game-information {
+    max-width: 1300px;
+    padding: 20px;
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    a {
+      margin-top: 2rem;
+      padding: 10px 40px;
+      border-radius: 2rem;
+      border: 5px solid $github;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      color: $black;
+      background-color: $white;
+      transition: $fade_hover_download;
+
+      &:hover {
+        text-shadow: 0 0 3px $black;
+        box-shadow: 0 0 10px $white;
+      }
+    }
+  }
+
+  .loading-games {
+    p {
+      font-size: 3rem;
+    }
+  }
+
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px), (max-height: 840px) {
+  main {
+    .games {
+      .header-games {
+        a {
+          i {
+            font-size: 2.5rem;
+          }
+        }
+        
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+
+      &-container {
+        .game-item {
+          &-container {
+            height: 150px;
+
+            img {
+              max-width: 80px;
+              height: 80px;
+            }
+      
+            h1 {
+              font-size: .9rem;
+            }
+          }
+        }
+      }
+    }
+
+    .game-information {
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px), (max-height: 600px) {
+  main {
+    .games {
+      &-container {
+        .game-item {
+          &-container {
+            height: 120px;
+
+            img {
+              max-width: 50px;
+              height: 50px;
+            }
+
+            h1 {
+              font-size: .8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .game-information {
+      h1 {
+        font-size: 2rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+
+      a {
+        margin-top: 1rem;
+        padding: 10px 20px;
+        border-width: 3px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main {
+    .games {
+      .header-games {
+        a {
+          i {
+            font-size: 2rem;
+          }
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      &-container {
+        .game-item {
+          &-container {
+            height: 100px;
+
+            h1 {
+              font-size: .5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .loading-games {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
